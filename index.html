@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>For My Husband ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="hearts-container"></div>
+
+<!-- SCREEN 1 -->
+<div class="screen active" id="screen1">
+  <img src="images/WhatsApp Image 2026-02-13 at 7.54.27 PM.jpeg" class="us-pic">
+  <h1>Will you be my Valentine? 💖</h1>
+  <div class="buttons">
+    <button id="yesBtn">Yes 💘</button>
+    <button id="noBtn">No 🙄</button>
+  </div>
+</div>
+
+<!-- SCREEN 2 QUIZ -->
+<div class="screen" id="screen2">
+  <h1>Valentine Compatibility Quiz 😌</h1>
+  <p id="question"></p>
+  <div class="buttons" id="quizOptions"></div>
+</div>
+
+<!-- SCREEN 3 GIFTS -->
+<div class="screen" id="screen3">
+  <h1>Pick your gift 🎁</h1>
+  <div class="gifts">
+    <div class="gift" onclick="openLetter()">🎁 Gift 1</div>
+    <div class="gift" onclick="openGallery()">🎁 Gift 2</div>
+    <div class="gift" onclick="openCalendar()">🎁 Gift 3</div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<!-- FINAL -->
+<div class="screen" id="finalScreen">
+  <h1 id="typing"></h1>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
