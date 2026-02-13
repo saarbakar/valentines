@@ -33,28 +33,11 @@ yesBtn.addEventListener("click", () => {
 });
 
 /* QUIZ QUESTIONS */
-
 const quizData = [
-  {
-    question: "Who would be the boss? 😌",
-    options: ["You 😇", "Me 😏", "None 😂"],
-    correct: 0
-  },
-  {
-    question: "Who fell in love first? 💘",
-    options: ["You did 👀", "Me 😇", "At the same time 💞"],
-    correct: 0
-  },
-  {
-    question: "Who is more obsessed? 😏",
-    options: ["You 😌", "Me 😭", "Both equally 🤭"],
-    correct: 2
-  },
-  {
-    question: "Who can't live without the other? 🥺",
-    options: ["You 💘", "Me 💗", "Both 🫶"],
-    correct: 2
-  }
+  { question: "Who would be the boss? 😌", options: ["You 😇", "Me 😏", "None 😂"], correct: 0 },
+  { question: "Who fell in love first? 💘", options: ["You did 👀", "Me 😇", "At the same time 💞"], correct: 0 },
+  { question: "Who is more obsessed? 😏", options: ["You 😌", "Me 😭", "Both equally 🤭"], correct: 2 },
+  { question: "Who can't live without the other? 🥺", options: ["You 💘", "Me 💗", "Both 🫶"], correct: 2 }
 ];
 
 let currentQuestion = 0;
@@ -93,52 +76,21 @@ function changeScreen(current, next) {
 }
 
 /* GIFTS */
-
 function openLetter() {
-  showModal("<h2>My Dearest Muizey Janu 💌</h2><p> There are honestly sooo many things I want to say, and if I tried to write them all, I would never stop, my words would never run out, and my praise for you would never end. When I tell you that you’re “perfect,” I don’t just mean it casually. You are genuinely perfect in every single way, loving, caring, making me happy, talking, teasing me hehe, matching your energy with mine, making me feel special, excelling at your work, giving respect, your bond with your siblings, with your parents… and the list goes on and on. Being your wife makes me feel like the LUCKIEST person in the world. I notice every little thing you do, and I feel it deeply. Sometimes the distance gets to me, like when I see you tired or having rough days. I just wish I could be there, physically, holding you, sharing those moments. I think about you every second of every day. Wherever I go, whatever I do, every new thing I try, every adventurous video I watch, I imagine doing it with you. I love that I get to live in “our little world” with you januu. It makes me so happy when you tell me that you don’t do things just for me, that you’re taking care of yourself and making sure you’re at your best. You truly are my entire world, janiii. Just like our sweetest first moments together, we’re going to celebrate our first Valentine’s Day over a video call. Just thinking about it makes me feel so warm and calm, knowing that InshaAllah, we’ll make up for this distance. I love EVERYTHING about you, listening to you, staring at you, talking to you, watching you do chores hehe… and yes, when you ask, “Can I make a 3rd cup of coffee?” UFFH 🤐. I love you more than words could ever say, my 💎Husband. I miss you soooooooo, sooooooo much, and I can’t wait to be with you again.  </p>");
+  showModal(`<h2>My Dearest Muizey Janu 💌</h2><p> There are honestly sooo many things I want to say, and if I tried to write them all, I would never stop, my words would never run out, and my praise for you would never end. When I tell you that you’re “perfect,” I don’t just mean it casually. You are genuinely perfect in every single way, loving, caring, making me happy, talking, teasing me hehe, matching your energy with mine, making me feel special, excelling at your work, giving respect, your bond with your siblings, with your parents… and the list goes on and on. Being your wife makes me feel like the LUCKIEST person in the world. I notice every little thing you do, and I feel it deeply. Sometimes the distance gets to me, like when I see you tired or having rough days. I just wish I could be there, physically, holding you, sharing those moments. I think about you every second of every day. Wherever I go, whatever I do, every new thing I try, every adventurous video I watch, I imagine doing it with you. I love that I get to live in “our little world” with you januu. It makes me so happy when you tell me that you don’t do things just for me, that you’re taking care of yourself and making sure you’re at your best. You truly are my entire world, janiii. Just like our sweetest first moments together, we’re going to celebrate our first Valentine’s Day over a video call. Just thinking about it makes me feel so warm and calm, knowing that InshaAllah, we’ll make up for this distance. I love EVERYTHING about you, listening to you, staring at you, talking to you, watching you do chores hehe… and yes, when you ask, “Can I make a 3rd cup of coffee?” UFFH 🤐. I love you more than words could ever say, my 💎Husband. Umm i don't even know what to call this, but I've fallen sooo hard.  I miss you soooooooo, sooooooo much, and I can’t wait to be with you again.  </p>`);
 }
 
 function openGallery() {
   showModal(`
     <h2 style="margin-bottom:20px;">Our Memories 💞</h2>
-
     <div class="gallery-grid">
-
-      <div class="card">
-        <img src="images/WhatsApp Image 2026-02-13 at 8.06.30 PM.jpeg">
-        <p>First Hug 🫂</p>
-      </div>
-
-      <div class="card">
-        <img src="images/WhatsApp Image 2026-02-13 at 7.53.57 PM.jpeg">
-        <p>First Travel</p>
-      </div>
-
-      <div class="card">
-        <img src="images/WhatsApp Image 2026-02-13 at 7.55.03 PM.jpeg">
-        <p>Sleepy Moments 😴</p>
-      </div>
-
-      <div class="card">
-        <img src="images/WhatsApp Image 2026-02-13 at 8.12.16 PM.jpeg">
-        <p>Fisrt Month Anniversary ❤️</p>
-      </div>
-
-      <div class="card">
-        <img src="images/WhatsApp Image 2026-02-13 at 8.13.09 PM.jpeg">
-        <p>Unexpected Twinnig ❤️</p>
-      </div>
-
-      <div class="card">
-        <img src="images/WhatsApp Image 2026-02-13 at 8.12.35 PM.jpeg">
-        <p>My Baji 😂</p>
-      </div>
-
-       <div class="card">
-        <img src="images/WhatsApp Image 2026-02-13 at 8.12.53 PM.jpeg">
-        <p>My Favorite Human 😜</p>
-      </div>
-
+      <div class="card"><img src="images/WhatsApp Image 2026-02-13 at 8.06.30 PM.jpeg"><p>First Hug 🫂</p></div>
+      <div class="card"><img src="images/WhatsApp Image 2026-02-13 at 7.53.57 PM.jpeg"><p>First Travel</p></div>
+      <div class="card"><img src="images/WhatsApp Image 2026-02-13 at 7.55.03 PM.jpeg"><p>Sleepy Moments 😴</p></div>
+      <div class="card"><img src="images/WhatsApp Image 2026-02-13 at 8.12.16 PM.jpeg"><p>First Month Anniversary ❤️</p></div>
+      <div class="card"><img src="images/WhatsApp Image 2026-02-13 at 8.13.09 PM.jpeg"><p>Unexpected Twinning ❤️</p></div>
+      <div class="card"><img src="images/WhatsApp Image 2026-02-13 at 8.12.35 PM.jpeg"><p>My Baji 😂</p></div>
+      <div class="card"><img src="images/WhatsApp Image 2026-02-13 at 8.12.53 PM.jpeg"><p>My Favorite Human 😜</p></div>
     </div>
   `);
 }
@@ -164,21 +116,24 @@ function openCalendar() {
 
 function showModal(content) {
   document.getElementById("modal").style.display = "flex";
-  document.getElementById("modalContent").innerHTML = content;
+  document.getElementById("modalContent").innerHTML = `
+    <button class="back-btn" onclick="closeModal()">← Back</button>
+    ${content}
+  `;
 }
 
-document.getElementById("modal").addEventListener("click", () => {
+function closeModal() {
   document.getElementById("modal").style.display = "none";
-});
+}
 
 function goFinal() {
-  document.getElementById("modal").style.display = "none";
+  closeModal();
   changeScreen("screen3", "finalScreen");
   typeMessage();
 }
 
 function typeMessage() {
-  const text = "I would choose you. Every lifetime. 💖";
+  const text = "I wish i could give you the ability to see yourself through my eyes, only then you would realize how special you are to me janiii💖";
   let i = 0;
   function typing() {
     if (i < text.length) {
@@ -198,8 +153,5 @@ document.addEventListener("mousemove", function(e) {
   heart.style.left = e.pageX + "px";
   heart.style.top = e.pageY + "px";
   document.body.appendChild(heart);
-
-  setTimeout(() => {
-    heart.remove();
-  }, 1000);
+  setTimeout(() => { heart.remove(); }, 1000);
 });
